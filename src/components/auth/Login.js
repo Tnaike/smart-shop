@@ -80,7 +80,7 @@ const Login = () => {
                   </button>
                 </div>
                 <div className='text-center mt-4'>
-                  <NavLink to='/' className='a-link' data-bs-toggle='modal' data-bs-target='#signupModal'>
+                  <NavLink to='/' className='a-link fw-bold' data-bs-toggle='modal' data-bs-target='#signupModal'>
                     Create your Account
                     <i
                       className='fa fa-long-arrow-right ms-1'
