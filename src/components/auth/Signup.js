@@ -24,7 +24,7 @@ const Signup = () => {
           <div className='modal-content auth-wrap'>
             <div className='modal-header'>
               <h5 className='modal-title fw-bold' id='registerModalLabel'>
-                Register
+                Create an Account
               </h5>
               <span class='modal-closer'></span>
               <span
@@ -102,7 +102,7 @@ const Signup = () => {
                   Already have an account?
                   <NavLink
                     to='/register'
-                    className='a-link'
+                    className='a-link fw-bold'
                     data-bs-toggle='modal'
                     data-bs-target='#loginModal'
                   >

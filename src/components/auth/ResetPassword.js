@@ -4,15 +4,6 @@ import { NavLink } from 'react-router-dom';
 const ResetPassword = () => {
   return (
     <>
-      <button
-        type='button'
-        className='btn btn-outline-primary'
-        data-bs-toggle='modal'
-        data-bs-target='#resetPasswordModal'
-      >
-        Reset Password
-      </button>
-
       <div
         className='modal fade'
         id='resetPasswordModal'
@@ -57,7 +48,7 @@ const ResetPassword = () => {
                   </button>
                 </div>
                 <div className='text-center mt-4'>
-                  <NavLink to='/login' className='a-link'>
+                  <NavLink to='/login' className='a-link fw-bold' data-bs-toggle='modal' data-bs-target='#loginModal'>
                     Login
                     <i
                       className='fa fa-long-arrow-right ms-1'
