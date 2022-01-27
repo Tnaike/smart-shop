@@ -54,7 +54,7 @@ const Index = () => {
           </div>
         </div>
         <button
-          class='carousel-control-prev'
+          className='carousel-control-prev'
           type='button'
           data-bs-target='#carouselIndicators'
           data-bs-slide='prev'
@@ -66,7 +66,7 @@ const Index = () => {
           <span className='visually-hidden'>Previous</span>
         </button>
         <button
-          class='carousel-control-next'
+          className='carousel-control-next'
           type='button'
           data-bs-target='#carouselIndicators'
           data-bs-slide='next'

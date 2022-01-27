@@ -18,7 +18,7 @@ const Login = () => {
       <div
         className='modal fade'
         id='loginModal'
-        tabindex='-1'
+        tabIndex='-1'
         aria-labelledby='loginModalLabel'
         aria-hidden='true'
       >
@@ -28,9 +28,9 @@ const Login = () => {
               <h5 className='modal-title fw-bold' id='loginModalLabel'>
                 Login
               </h5>
-              <span class='modal-closer'></span>
+              <span className='modal-closer'></span>
               <span
-                class='btn-close modal-close-times fs-6'
+                className='btn-close modal-close-times fs-6'
                 data-bs-dismiss='modal'
                 aria-label='Close'
               ></span>
@@ -75,7 +75,7 @@ const Login = () => {
                   </NavLink>
                 </div>
                 <div className='btn-container'>
-                  <button type='submit' class='btn-block btn-primary'>
+                  <button type='submit' className='btn-block btn-primary'>
                     Submit
                   </button>
                 </div>
