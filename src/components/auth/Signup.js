@@ -16,7 +16,7 @@ const Signup = () => {
       <div
         className='modal fade'
         id='signupModal'
-        tabindex='-1'
+        tabIndex='-1'
         aria-labelledby='registerModalLabel'
         aria-hidden='true'
       >
@@ -26,9 +26,9 @@ const Signup = () => {
               <h5 className='modal-title fw-bold' id='registerModalLabel'>
                 Create an Account
               </h5>
-              <span class='modal-closer'></span>
+              <span className='modal-closer'></span>
               <span
-                class='btn-close modal-close-times fs-6'
+                className='btn-close modal-close-times fs-6'
                 data-bs-dismiss='modal'
                 aria-label='Close'
               ></span>
@@ -83,18 +83,18 @@ const Signup = () => {
                     <i className='fa fa-lock'></i>
                   </span>
                 </div>
-                <div class='mb-3 form-check px-4'>
+                <div className='mb-3 form-check px-4'>
                   <input
                     type='checkbox'
-                    class='form-check-input'
+                    className='form-check-input'
                     id='acceptTermsCheck'
                   />
-                  <label class='form-check-label' for='acceptTermsCheck'>
+                  <label className='form-check-label' htmlFor='acceptTermsCheck'>
                   Accept Terms &amp; Conditions
                   </label>
                 </div>
                 <div className='btn-container'>
-                  <button type='submit' class='btn-block btn-primary'>
+                  <button type='submit' className='btn-block btn-primary'>
                     Register
                   </button>
                 </div>

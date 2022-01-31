@@ -7,7 +7,7 @@ const ResetPassword = () => {
       <div
         className='modal fade'
         id='resetPasswordModal'
-        tabindex='-1'
+        tabIndex='-1'
         aria-labelledby='resetPassModalLabel'
         aria-hidden='true'
       >
@@ -17,9 +17,9 @@ const ResetPassword = () => {
               <h5 className='modal-title fw-bold' id='resetPassModalLabel'>
                 Reset Password
               </h5>
-              <span class='modal-closer'></span>
+              <span className='modal-closer'></span>
               <span
-                class='btn-close modal-close-times fs-6'
+                className='btn-close modal-close-times fs-6'
                 data-bs-dismiss='modal'
                 aria-label='Close'
               ></span>
@@ -43,7 +43,7 @@ const ResetPassword = () => {
                   </span>
                 </div>
                 <div className='btn-container'>
-                  <button type='submit' class='btn-block btn-primary'>
+                  <button type='submit' className='btn-block btn-primary'>
                     Reset Password
                   </button>
                 </div>

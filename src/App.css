@@ -62,10 +62,17 @@ html {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.prod-card, .prod-card img{
+  transition: all 0.4s ease;
 }
+.prod-card:hover, .prod-card:hover{
+  transform: scale(1.1);
+}
+.prod-title{
+  font-size: 1rem;
+  
+}
+
 
 @keyframes App-logo-spin {
   from {
