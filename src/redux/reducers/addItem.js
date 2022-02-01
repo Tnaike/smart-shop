@@ -1,6 +1,6 @@
-const initialState = [];
+const addItem = [];
 
-const addItems = (state = initialState, { type, payload }) => {
+const addItems = (state = addItem, { type, payload }) => {
   switch (type) {
     case 'ADDITEM':
       return [...state, payload];
