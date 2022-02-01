@@ -10,7 +10,7 @@ const Product = () => {
         <img src={item.img} className='card-img-top' alt={item.title} />
         <div className='card-body text-center'>
           <h5 className='card-title prod-title'>{item.title}</h5>
-          <p className='lead bold'>₦ {item.price}</p>
+          <p className='lead bold'>₦{item.price}</p>
           <NavLink
             to={`/products/${item.id}`}
             className='btn btn-outline-primary'
@@ -27,7 +27,7 @@ const Product = () => {
     <div>
       <div className='container py-5'>
         <div className='row'>
-          <h2>Product</h2>
+          <h2>Recommended Products</h2>
           <hr />
         </div>
       </div>
