@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import DATA from '../Data';
+import { addItem, deleteItem } from '../redux/actions/index';
 
 const ProductDetails = () => {
   const [cartBtn, setCartBtn] = useState('Add to Cart');
@@ -8,11 +10,19 @@ const ProductDetails = () => {
   // eslint-disable-next-line eqeqeq
   const proDetail = DATA.filter((item) => item?.id == proId?.id);
   const product = proDetail[0];
+  console.log(product);
+
+  // We need to store useDispatch
+  const dispatch = useDispatch();
 
   const handleCart = () => {
-    cartBtn === 'Add to Cart'
-      ? setCartBtn('Remove from Cart')
-      : setCartBtn('Add to Cart');
+    if (cartBtn === 'Add to Cart') {
+      dispatch(addItem(product));
+      setCartBtn('Remove from Cart');
+    } else {
+      dispatch(deleteItem(product));
+      setCartBtn('Add to Cart');
+    }
   };
 
   return (
