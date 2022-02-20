@@ -9,6 +9,7 @@ import Product from './components/Product';
 import Categories from './components/Categories';
 import ProductDetails from './components/ProductDetails';
 import Cart from './components/Cart';
+import Checkout from './components/Checkout';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/products' exact component={Product} />
         <Route path='/products/:id' exact component={ProductDetails} />
         <Route path='/cart' exact component={Cart} />
+        <Route path='/checkout' exact component={Checkout} />
         <Redirect to='/' />
       </Switch>
       <Footer />
