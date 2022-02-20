@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { deleteItem } from '../redux/actions/index';
 
-function Cart() {
+const Cart = () => {
   const state = useSelector((state) => state.addItem);
   const dispatch = useDispatch();
 
@@ -52,14 +52,16 @@ function Cart() {
   };
 
   const button = () => {
-    return(
+    return (
       <div className='container'>
-          <div className='row'>
-            <NavLink to='/checkout' className='btn btn-outline-primary mb-5 w-25'>Process To Checkout</NavLink>
-          </div>
-          </div>
-    )
-  }
+        <div className='row'>
+          <NavLink to='/checkout' className='btn btn-outline-primary mb-5 w-25'>
+            Process To Checkout
+          </NavLink>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <>
@@ -68,6 +70,6 @@ function Cart() {
       {state.length !== 0 && button()}
     </>
   );
-}
+};
 
 export default Cart;
