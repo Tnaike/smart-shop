@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import Product from './components/Product';
+import Products from './components/Products';
 import Categories from './components/Categories';
 import ProductDetails from './components/ProductDetails';
 import Cart from './components/Cart';
@@ -20,7 +20,7 @@ function App() {
         <Route path='/about' exact component={About} />
         <Route path='/categories' exact component={Categories} />
         <Route path='/contact' exact component={Contact} />
-        <Route path='/products' exact component={Product} />
+        <Route path='/products' exact component={Products} />
         <Route path='/products/:id' exact component={ProductDetails} />
         <Route path='/cart' exact component={Cart} />
         <Route path='/checkout' exact component={Checkout} />

@@ -5,7 +5,7 @@ export const addItem = (product) => {
   };
 };
 
-export const deleteItem = (product) => {
+export const delItem = (product) => {
   return {
     type: 'DELITEM',
     payload: product,
