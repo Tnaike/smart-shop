@@ -53,7 +53,7 @@ const Header = () => {
               </li>
               <li className='nav-item'>
                 <NavLink to='/products' className='nav-link'>
-                  Product
+                  Products
                 </NavLink>
               </li>
               <li className='nav-item'>
