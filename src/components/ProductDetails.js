@@ -75,7 +75,7 @@ const ProductDetails = () => {
           <h2 className='display-6 fw-bold my-4'>${product.price}</h2>
           <p className='lead'>{product.description}</p>
           <button className='btn btn-outline-primary px-4 py-2'>Add to Cart</button>
-          <NavLink className='btn btn-outline-primary px-3 py-2'>Go to Cart</NavLink>
+          <NavLink to='/' className='btn btn-dark ms-2 px-3 py-2'>Go to Cart</NavLink>
         </div>
       </>
     );
