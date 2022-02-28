@@ -14,7 +14,30 @@ html {
   background-color: #fff;
   margin: 0;
 }
-
+.main-wrap{
+  background-color: rgb(244 244 244 / 80%);
+}
+.bold {
+  font-weight: 600;
+}
+.bolder {
+  font-weight: 700;
+}
+.font-10 {
+  font-size: 10px;
+}
+.font-11 {
+  font-size: 11px;
+}
+.font-12 {
+  font-size: 12px !important;
+}
+.font-14 {
+  font-size: 14px !important;
+}
+.font-15 {
+  font-size: 15px !important;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -39,10 +62,17 @@ html {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.prod-card, .prod-card img{
+  transition: all 0.4s ease;
 }
+.prod-card:hover, .prod-card:hover{
+  transform: scale(1.1);
+}
+.prod-title{
+  font-size: 1rem;
+  
+}
+
 
 @keyframes App-logo-spin {
   from {

@@ -1,0 +1,81 @@
+const DATA = [
+  {
+    id: 1,
+    title: 'Iphone 6',
+    price: 74000,
+    desc: 'The iPhone 6 is equipped with an A8 chip based on a 64-bit desktop architecture. What makes this powerful performance even better is the M8 motion coprocessor. It measures your activity efficiently with advanced sensors including a new barometer. The A8 chip uses advanced 20nm process technology. It has 2 billion transistors on a very small and efficient chip, which is not only incredible in performance, but also 50% more efficient than A7 chips.',
+    img: '/assets/images/products/iPhone-6.jpg',
+  },
+  {
+    id: 2,
+    title: 'Tecno Camon 18i',
+    price: 195000,
+    desc: 'TECNO CAMON 18i is one of the latest additions to an everlasting list of TECNO phones, and the popular CAMON series focused mainly on photography. eing the right successor to Camon 17, TECNO Camon 18 comes with many notable features. This includes 128GB storage, improved camera, larger display, 18W Flash charge, etc. If this is all you\'re looking for in your next smartphone, the TECNO CAMON 18 could be the best choice for you. It comes packed with the MediaTek Helio G85 gaming and battery optimization focused processor, a 6.6" Dot-In HD+ cinematic display with 90Hz refresh rate that can brighten up to 480 nits, a dependable 5000mAh battery with 18W Quick charge, 128GB of internal storage and 4GB of RAM, a 48MP flagship-level camera, and many more ',
+    img: '/assets/images/products/tecno-camon.jpg',
+  },
+  {
+    id: 3,
+    title: 'Tecno Phantom X',
+    price: 284000,
+    desc: 'Tecno Phantom X, 6.7" (8GB RAM, 256GB ROM) Android 11 (50/13/8)MP + (48/8)MP Selfie - Dual SIM - 4700mAh - 4G - Iceland Blue. The phone comes with a 6.7-inch touchscreen display with a resolution of 1080x2340 pixels. Tecno Phantom X is powered by a Helio G95 processor. It comes with 8GB of RAM. The Tecno Phantom X runs Android 11 and is powered by a 4700mAh battery. The Tecno Phantom X supports proprietary fast charging with 33W Flash charge.',
+    img: '/assets/images/products/tecno-phantom.jpg',
+  },
+  {
+    id: 4,
+    title: 'Hp 15 10th Gen Laptop',
+    price: 420000,
+    desc: 'A laptop with the power to surf, stream, and do so much more with an Intel® processor. Plus extensive quality testing ensures that you can keep going...and going. Stay connected and entertained Stay connected and entertained with a long lasting HP fast charge battery and visually rich display. Plus, easily store and enjoy your favorite music, movies, and photos with ample storage. Sleek. Stylish. Portable. A sleek and stylish design makes this eye catching laptop easy to take anywhere. With its beautiful brushed keyboard and color matched hinge, the smartly designed HP 39.6 cm (15.6") laptop looks as good as it performs.',
+    img: '/assets/images/products/hp-laptop.jpg',
+  },
+  {
+    id: 5,
+    title: 'Oraimo Earbuds',
+    price: 11999,
+    desc: 'oraimo FreePods-2 2Baba-Version True Wireless Stereo Earbuds. A 13mm dynamic driver produces sound with flawless accuracy and treble that sparkles full of detail. Earbuds are ergonomically designed to conform to the shape of your ear canal. A single earbud weighs only 3g, making it easier and more comfortable to wear.',
+    img: '/assets/images/products/oraimo-pod.jpg',
+  },
+  {
+    id: 6,
+    title: 'Mens Plain Black Round Neck Tshirts',
+    price: 4999,
+    desc: 'Get Quality  round neck single black shirts on Ford fashion and revive your plain look with the various simple styles and colours that appeals to your appearance. Have a more relax personal style by pairing with the right blazer and accessorize with a shawl round the neck or you might as well finish with a pair of slim-fit jeans and any choice of footwear like brogues, desert boots or loafers would be ideal for a look that works perfectly well on a night out with buddies. Something about plain shirt is that it offers you the versatile means of matching it up to blend within a business to casual environment. Purchase our various plain shirt design today as it comes with stylishly designs, perfect cuts and stitch with simple modern styles that will revive your plain look.',
+    img: '/assets/images/products/black-tshirt.jpg',
+  },
+  {
+    id: 7,
+    title: 'Mens Blazer',
+    price: 25000,
+    desc: 'Get the latest fashion trend without you spending a fortune or going overboard on you budget to look all day or everyday nice. Jumia has curated an amazing vast collections of fashion products raging from Men’s and women’s to kids fashion etc... of the finest fabric and amazing colours meeting the best Fashion trend and timeless designs and styles. Jumia offers you a large assortment of fashion styles raging from Tops to Dresses, From Blouses to Skirts, From Denims to Jumpsuits, From Polos To T-shirt/Shirts, Denims To Pants, From Casual To Formal Suits, From English to African styles, Formal to Informal Wears And all kids Party to Casual Wears etc... Jumia collection is a top notch, meeting all your fashion needs to ignite your style! We Also offers you the best prices in Nigeria, with the convenience of online shopping and nationwide delivery.',
+    img: '/assets/images/products/men-blazer.jpg',
+  },
+  {
+    id: 8,
+    title: "Men's Tracksuit Set",
+    price: 10000,
+    desc: "Men's Tracksuit Set Jogger Sweatpants Sports Suit. Lightweight, Comfortable Quality Polyester Material with Stylish Design, fits for all seasons Active wear. Stand-up Collar provides extra coverage and protection. Ribbed Hem and Cuffs seal in warmth.",
+    img: '/assets/images/products/Tracksuit.jpg',
+  },
+  {
+    id: 9,
+    title: 'Adidas Core Sneakers',
+    price: 9000,
+    desc: "Adidas CORE SNEAKERS GRAND COURT BASE. A mash-up of celebrated court styles. These '70s-inspired shoes have a smooth leather-like upper. They flash perforated 3-Stripes on one side and stitched contrast 3-Stripes on the other. Ultra-soft cushioning ensures a smooth ride.",
+    img: '/assets/images/products/adidas-sneakers.jpg',
+  },
+  {
+    id: 10,
+    title: 'Tavin Tunic & Trousers Set',
+    price: 6000,
+    desc: 'Tavin By Modanisa Tunic&Trousers Set - Black - Tavin. This formal suit by Tavin is a n way to add a fashionable sense to every outfit. Wear yours with low-key accessories, to create an updated, figure-flattering look.',
+    img: '/assets/images/products/Tavin-Tunic.jpg',
+  },
+  {
+    id: 11,
+    title: 'Multipurpose Foldable Laptop Table',
+    price: 8000,
+    desc: 'Multipurpose Wooden Foldable Laptop Table With Cup Hole. Laptop Bed Tray Table, Foldable Lap Desk Stand, Multifunction Lap Tablet with Slot. Bed Tray Laptop Desk for Eating Breakfast, Reading, Working, Watching Movie on Bed/Couch/Sofa/Floor',
+    img: '/assets/images/products/Laptop-Table.jpg',
+  },
+];
+
+export default DATA;
