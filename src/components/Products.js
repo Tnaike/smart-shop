@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import { NavLink } from 'react-router-dom';
-// import DATA from '../Data';
 
 const Products = () => {
   const [data, setData] = useState([]);
@@ -87,10 +86,8 @@ const Products = () => {
             Electronics
           </button>
         </div>
-        {/* <div className='row'>{DATA.map(productItem)}</div> */}
 
         {filter?.map((product) => {
-  console.log(product.id);
           return (
             <>
               <div className='col-md-3 col-sm-12 mb-4' key={product?.id}>
@@ -121,26 +118,6 @@ const Products = () => {
       </>
     );
   };
-
-  // const productItem = (item) => {
-  //   return (
-  //     <div className='col-md-3 col-sm-12 p-3' key={item.id}>
-  //       <div className='prod-card card py-2'>
-  //         <img src={item.img} className='card-img-top' alt={item.title} />
-  //         <div className='card-body text-center'>
-  //           <h5 className='card-title prod-title'>{item.title}</h5>
-  //           <p className='lead bold'>₦{item.price}</p>
-  //           <NavLink
-  //             to={`/products/${item.id}`}
-  //             className='btn btn-outline-primary'
-  //           >
-  //             Buy Now
-  //           </NavLink>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   );
-  // };
 
   return (
     <div>

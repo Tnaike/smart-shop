@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
-// import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
-// import DATA from '../Data';
-//import { addItem, deleteItem } from '../redux/actions/index';
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -20,25 +17,6 @@ const ProductDetails = () => {
     };
     getProduct();
   }, [id]);
-
-  // const [cartBtn, setCartBtn] = useState('Add to Cart');
-  // // eslint-disable-next-line eqeqeq
-  // const proDetail = DATA.filter((item) => item?.id == proId?.id);
-  // const product = proDetail[0];
-  console.log(product);
-
-  // We need to store useDispatch
-  // const dispatch = useDispatch();
-
-  // const handleCart = () => {
-  //   if (cartBtn === 'Add to Cart') {
-  //     dispatch(addItem(product));
-  //     setCartBtn('Remove from Cart');
-  //   } else {
-  //     dispatch(deleteItem(product));
-  //     setCartBtn('Add to Cart');
-  //   }
-  // };
 
   const SkeletonLoading = () => {
     return (
