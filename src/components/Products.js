@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Products = () => {
   const [data, setData] = useState([]);
-  const [filter, setFilter] = useState(data);
+  const [filteredProducts, setFilteredProducts] = useState(data);
   const [loading, setLoading] = useState(false);
   let isCreated = true;
 
@@ -14,9 +14,8 @@ const Products = () => {
       const response = await fetch('https://fakestoreapi.com/products');
       if (isCreated) {
         setData(await response?.clone()?.json());
-        setFilter(await response?.json());
+        setFilteredProducts(await response?.json());
         setLoading(false);
-        console.log(filter);
       }
       return () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -48,7 +47,7 @@ const Products = () => {
 
   const filterProduct = (cat) => {
     const updatedList = data?.filter((x) => x?.category === cat);
-    setFilter(updatedList);
+    setFilteredProducts(updatedList);
   };
 
   const ShowProducts = () => {
@@ -57,7 +56,7 @@ const Products = () => {
         <div className='buttons d-flex justify-content-center mb-4 pb-4'>
           <button
             className='btn btn-outline-dark me-2'
-            onClick={() => setFilter(data)}
+            onClick={() => setFilteredProducts(data)}
           >
             All
           </button>
@@ -87,7 +86,7 @@ const Products = () => {
           </button>
         </div>
 
-        {filter?.map((product) => {
+        {filteredProducts?.map((product) => {
           return (
             <>
               <div className='col-md-3 col-sm-12 mb-4' key={product?.id}>
