@@ -26,7 +26,7 @@ const Products = () => {
     getProducts();
   }, []);
 
-  const Loading = () => {
+  const LoadingProducts = () => {
     return (
       <>
         <div className='col-md-3'>
@@ -128,7 +128,7 @@ const Products = () => {
       </div>
       <div className='container'>
         <div className='row justify-content-center'>
-          {loading ? <Loading /> : <ShowProducts />}
+          {loading ? <LoadingProducts /> : <ShowProducts />}
         </div>
       </div>
     </div>
