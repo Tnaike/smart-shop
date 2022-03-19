@@ -1,22 +1,22 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, /*useDispatch */} from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { delItem } from '../redux/actions/index';
+// import { delItem } from '../redux/actions/index';
 
 const Cart = () => {
   const state = useSelector((state) => state.addItem);
-  const dispatch = useDispatch();
+  //const dispatch = useDispatch();
 
-  const handleClose = (item) => {
-    dispatch(delItem(item));
-  };
+  // const handleClose = (item) => {
+  //   dispatch(delItem(item));
+  // };
 
   const cartItems = (cartItem) => {
     return (
       <div className='px-4 my-5 bg-light rounded-3' key={cartItem.id}>
         <div className='container py-4'>
           <button
-            onClick={() => handleClose(cartItem)}
+            // onClick={() => handleClose(cartItem)}
             className='btn-close float-end'
             aria-label='Close'
           ></button>

@@ -14,8 +14,47 @@ html {
   background-color: #fff;
   margin: 0;
 }
-.main-wrap{
+.main-wrap {
   background-color: rgb(244 244 244 / 80%);
+}
+.pr {
+  position: relative;
+}
+.oh {
+  overflow: hidden;
+}
+.pt__30 {
+  padding-top: 30px;
+}
+.pb__30 {
+  padding-bottom: 30px;
+}
+.pt__50 {
+  padding-top: 50px;
+}
+.pb__50 {
+  padding-bottom: 50px;
+}
+.pt__60 {
+  padding-top: 60px;
+}
+.pb__60 {
+  padding-bottom: 60px;
+}
+.mg__0 {
+  margin: 0;
+}
+.mt__30 {
+  margin-top: 30px;
+}
+.mb__30 {
+  margin-bottom: 30px;
+}
+.mt__50 {
+  margin-top: 50px;
+}
+.mb__50 {
+  margin-bottom: 50px;
 }
 .bold {
   font-weight: 600;
@@ -42,8 +81,22 @@ html {
   height: 40vmin;
   pointer-events: none;
 }
-.pos-res {
-  position: relative;
+.fl_between {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+}
+.al_center {
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .dn_mb,
+  .dn_md {
+    display: none;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -62,17 +115,17 @@ html {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.prod-card, .prod-card img{
+.prod-card,
+.prod-card img {
   transition: all 0.4s ease;
 }
-.prod-card:hover, .prod-card:hover{
+.prod-card:hover,
+.prod-card:hover {
   transform: scale(1.1);
 }
-.prod-title{
+.prod-title {
   font-size: 1rem;
-  
 }
-
 
 @keyframes App-logo-spin {
   from {
