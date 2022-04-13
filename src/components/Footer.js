@@ -1,6 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import FootLogo from '../assets/SmartShop__foot.png';
+import MasterCard from '../assets/Mastercard.png';
+import ApplePay from '../assets/ApplePay.png';
+import AmazonPay from '../assets/AmazonPay.png';
+import PayPal from '../assets/PayPal.png';
+import Bitcoin from '../assets/Bitcoin.png';
+import Visa from '../assets/Visa.png';
 import './style.css';
 
 const Footer = () => {
@@ -209,6 +215,14 @@ const Footer = () => {
                       </div>
                       <p className='newsletter-msg'></p>
                     </form>
+                  </div>
+                  <div className='payment__method-icon mt__20'>
+                    <img src={MasterCard} alt='payment method'/>
+                    <img src={AmazonPay} alt='payment method'/>
+                    <img src={ApplePay} alt='payment method'/>
+                    <img src={PayPal} alt='payment method'/>
+                    <img src={Bitcoin} alt='payment method'/>
+                    <img src={Visa} alt='payment method'/>
                   </div>
                 </div>
               </div>
