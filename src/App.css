@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 * {
   margin: 0;
@@ -13,6 +14,16 @@ html {
   font-size: 14px;
   background-color: #fff;
   margin: 0;
+
+}
+a, a:active, a:focus, a:hover {
+  text-decoration: none;
+  outline: 0;
+}
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 0;
 }
 .main-wrap {
   background-color: rgb(244 244 244 / 80%);
@@ -43,6 +54,12 @@ html {
 }
 .mg__0 {
   margin: 0;
+}
+.mt__20 {
+  margin-top: 20px;
+}
+.mb__20 {
+  margin-bottom: 20px;
 }
 .mt__30 {
   margin-top: 30px;
@@ -77,6 +94,25 @@ html {
 .font-15 {
   font-size: 15px !important;
 }
+.font-16 {
+  font-size: 16px !important;
+}
+input[type=email], input[type=password], input[type=search], input[type=text], textarea {
+  width: 100%;
+  padding: 0 15px;
+  height: 46px;
+  color: #111111;
+  font-size: 14px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  outline: none;
+}
+footer input[type=password], footer input[type=search], footer input[type=text], textarea {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -85,7 +121,6 @@ html {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   -webkit-box-pack: justify;
-  box-pack: justify;
 }
 .al_center {
   -webkit-box-align: center;
