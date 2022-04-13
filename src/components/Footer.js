@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../assets/smartshop-logo.png';
+import FootLogo from '../assets/SmartShop__foot.png';
 import './style.css';
 
 const Footer = () => {
   const today = new Date();
   const year = today.getFullYear();
+
   return (
     <>
       <footer className='footer'>
@@ -22,7 +23,7 @@ const Footer = () => {
                     <div className='footer-contact'>
                       <p>
                         <a className='db' href='/'>
-                          <img src={Logo} alt='SmartShop' />
+                          <img src={FootLogo} alt='SmartShop' height='50'/>
                         </a>
                       </p>
                       <p>
