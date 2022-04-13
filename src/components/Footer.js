@@ -171,6 +171,9 @@ const Footer = () => {
                       <a href='/size-guide'>Size Guide</a>
                     </li>
                     <li class='menu-item'>
+                      <a href='/safety-tips'>Safety tips</a>
+                    </li>
+                    <li class='menu-item'>
                       <a href='/faqs'>FAQs</a>
                     </li>
                   </ul>
@@ -202,7 +205,6 @@ const Footer = () => {
                           className='btn btn-icon submit'
                           type='submit'
                         >
-                          Subscribe
                         </button>
                       </span>
                     </div>
