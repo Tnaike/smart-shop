@@ -95,6 +95,9 @@ button.btn.submit {
   padding-right: 10px;
   min-width: 24px;
 }
+.payment__method-icon img {
+  height: 32px;
+}
 
 @media only screen and (max-width: 767px){
 .site-footer .text-right {
