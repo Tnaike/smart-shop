@@ -217,12 +217,12 @@ const Footer = () => {
                     </form>
                   </div>
                   <div className='payment__method-icon mt__20'>
-                    <img src={MasterCard} alt='payment method'/>
-                    <img src={AmazonPay} alt='payment method'/>
-                    <img src={ApplePay} alt='payment method'/>
-                    <img src={PayPal} alt='payment method'/>
-                    <img src={Bitcoin} alt='payment method'/>
-                    <img src={Visa} alt='payment method'/>
+                    <img src={MasterCard} alt='payment method' title='MasterCard'/>
+                    <img src={AmazonPay} alt='payment method' title='AmazonPay'/>
+                    <img src={ApplePay} alt='payment method' title='ApplePay'/>
+                    <img src={PayPal} alt='payment method' title='PayPal'/>
+                    <img src={Bitcoin} alt='payment method' title='Bitcoin'/>
+                    <img src={Visa} alt='payment method' title='Visa'/>
                   </div>
                 </div>
               </div>
