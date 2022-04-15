@@ -34,6 +34,16 @@ const Header = () => {
             <ul className='navbar-nav mb-2 mb-lg-0'>
               <li className='nav-item'>
                 <NavLink to='/' className='nav-link' aria-current='page'>
+                  Home
+                </NavLink>
+              </li>
+              <li className='nav-item'>
+                <NavLink to='/about' className='nav-link'>
+                  About
+                </NavLink>
+              </li>
+              <li className='nav-item'>
+                <NavLink to='/shop' className='nav-link'>
                   Shop
                 </NavLink>
               </li>
@@ -47,18 +57,13 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className='nav-item'>
-                <NavLink to='/about' className='nav-link'>
-                  About
-                </NavLink>
-              </li>
-              <li className='nav-item'>
                 <NavLink to='/products' className='nav-link'>
                   Products
                 </NavLink>
               </li>
               <li className='nav-item'>
                 <NavLink to='/contact' className='nav-link'>
-                  Contact
+                  Contact Us
                 </NavLink>
               </li>
             </ul>
