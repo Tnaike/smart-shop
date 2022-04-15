@@ -116,19 +116,19 @@ const Footer = () => {
                   </h3>
                   <div className='menu_footer widget_footer'>
                     <ul className='menu'>
-                      <li class='menu-item'>
+                      <li className='menu-item'>
                         <a href='/collections/men'>For Men</a>
                       </li>
-                      <li class='menu-item'>
+                      <li className='menu-item'>
                         <a href='/collections/women'>For Women</a>
                       </li>
-                      <li class='menu-item'>
+                      <li className='menu-item'>
                         <a href='/collections/accessories'>Accessories</a>
                       </li>
-                      <li class='menu-item'>
+                      <li className='menu-item'>
                         <a href='/collections/shoes'>Shoes</a>
                       </li>
-                      <li class='menu-item'>
+                      <li className='menu-item'>
                         <a href='/collections/denim'>Denim</a>
                       </li>
                     </ul>
@@ -140,21 +140,21 @@ const Footer = () => {
                   <h3 className='widget_title flex al_center fl_between font-16 mg__0 mb__20'>
                     <span className='txt_title'>INFORMATION</span>
                   </h3>
-                  <div class='menu_footer widget_footer'>
-                    <ul class='menu'>
-                      <li class='menu-item'>
+                  <div className='menu_footer widget_footer'>
+                    <ul className='menu'>
+                      <li className='menu-item'>
                         <a href='/about-us'>About Us</a>
                       </li>
-                      <li class='menu-item'>
+                      <li className='menu-item'>
                         <a href='/contact-us'>Contact Us</a>
                       </li>
-                      <li class='menu-item'>
+                      <li className='menu-item'>
                         <a href='/terms-conditions'>Terms &amp; Conditions</a>
                       </li>
-                      <li class='menu-item'>
+                      <li className='menu-item'>
                         <a href='/returns-exchanges'>Returns &amp; Exchanges</a>
                       </li>
-                      <li class='menu-item'>
+                      <li className='menu-item'>
                         <a href='/shipping-delivery'>Shipping &amp; Delivery</a>
                       </li>
                     </ul>
@@ -166,21 +166,21 @@ const Footer = () => {
                   <h3 className='widget_title flex al_center fl_between font-16 mg__0 mb__20'>
                     <span className='txt_title'>USEFUL LINKS</span>
                   </h3>
-                  <div class='menu_footer widget_footer'>
-                    <ul class='menu'>
-                      <li class='menu-item'>
+                  <div className='menu_footer widget_footer'>
+                    <ul className='menu'>
+                      <li className='menu-item'>
                         <a href='/store-location'>Store Location</a>
                       </li>
-                      <li class='menu-item'>
+                      <li className='menu-item'>
                         <a href='/latest-news'>Latest News</a>
                       </li>
-                      <li class='menu-item'>
+                      <li className='menu-item'>
                         <a href='/size-guide'>Size Guide</a>
                       </li>
-                      <li class='menu-item'>
+                      <li className='menu-item'>
                         <a href='/safety-tips'>Safety tips</a>
                       </li>
-                      <li class='menu-item'>
+                      <li className='menu-item'>
                         <a href='/faqs'>FAQs</a>
                       </li>
                     </ul>

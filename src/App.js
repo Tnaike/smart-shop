@@ -10,6 +10,7 @@ import Categories from './components/Categories';
 import ProductDetails from './components/ProductDetails';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
+import Shop from './components/Shop';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/about' exact component={About} />
+        <Route path='/shop' exact component={Shop} />
         <Route path='/categories' exact component={Categories} />
         <Route path='/contact' exact component={Contact} />
         <Route path='/products' exact component={Products} />
