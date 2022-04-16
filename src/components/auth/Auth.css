@@ -158,20 +158,22 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
 }
-.btn-cart{
-    border: 1px solid;
+.btn-cart img {
+  height: 24px;
 }
 .cart-count {
   font-size: 12px;
   font-weight: 700;
   position: absolute;
-  top: 10px;
+  top: -5px;
+  right: -5px;
   background: #0d6efd;
   color: #fff;
   padding: 1px 7px;
   border-radius: 50px;
 }
-.btn-cart:focus .cart-count, .btn-cart:hover .cart-count {
+.btn-cart:focus .cart-count,
+.btn-cart:hover .cart-count {
   background: #0d6efd;
 }
 
