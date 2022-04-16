@@ -29,6 +29,12 @@ const Index = () => {
             data-bs-slide-to='2'
             aria-label='Slide 3'
           ></button>
+          <button
+            type='button'
+            data-bs-target='#carouselIndicators'
+            data-bs-slide-to='3'
+            aria-label='Slide 4'
+          ></button>
         </div>
         <div className='carousel-inner'>
           <div className='carousel-item active'>
@@ -40,7 +46,14 @@ const Index = () => {
           </div>
           <div className='carousel-item'>
             <img
-              src='/assets/images/home/slider-pendant-lighting.jpg'
+              src='/assets/images/home/slider-haf-img.png'
+              className='d-block w-100'
+              alt='...'
+            />
+          </div>
+          <div className='carousel-item'>
+            <img
+              src='/assets/images/home/store-banner.jpg'
               className='d-block w-100'
               alt='...'
             />
