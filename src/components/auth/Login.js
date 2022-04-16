@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Auth.css';
-import {ReactComponent as UserIcon} from '../../assets/User.svg';
+import { ReactComponent as UserIcon } from '../../assets/User.svg';
 
 const Login = () => {
   return (
@@ -12,7 +12,7 @@ const Login = () => {
         data-bs-toggle='modal'
         data-bs-target='#loginModal'
       >
-        <UserIcon className='svg-navIcon'/>
+        <UserIcon className='svg-navIcon' />
       </button>
 
       <div

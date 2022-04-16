@@ -6,7 +6,7 @@ const SearchButton = () => {
   return (
     <>
       <NavLink to='/' className='btn btn-cart a-link pr p-0 ms-3'>
-        <SearchIcon className='svg-navIcon'/>
+        <SearchIcon className='svg-navIcon' />
       </NavLink>
     </>
   );
