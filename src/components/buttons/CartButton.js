@@ -7,7 +7,7 @@ const CartButton = () => {
   const state = useSelector((state) => state?.handleCart);
   return (
     <>
-      <NavLink to='/cart' className='btn btn-cart a-link pr'>
+      <NavLink to='/cart' className='btn btn-cart a-link pr p-0 ms-3'>
         <span>
           <img src={CartIcon} alt='cart' />
         </span>

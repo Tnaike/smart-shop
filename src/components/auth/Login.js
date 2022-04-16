@@ -1,18 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Auth.css';
-
+import {ReactComponent as UserIcon} from '../../assets/User.svg';
 
 const Login = () => {
   return (
     <>
       <button
         type='button'
-        className='a-link'
+        className='a-link btn-cart ms-3'
         data-bs-toggle='modal'
         data-bs-target='#loginModal'
       >
-        <span className='fa fa-user-o me-1'></span>Login
+        <UserIcon className='svg-navIcon'/>
       </button>
 
       <div
@@ -70,7 +70,12 @@ const Login = () => {
                   </span>
                 </div>
                 <div className='form-wrap text-end'>
-                  <NavLink to='/reset-password' className='a-link' data-bs-toggle='modal' data-bs-target='#resetPasswordModal'>
+                  <NavLink
+                    to='/reset-password'
+                    className='a-link'
+                    data-bs-toggle='modal'
+                    data-bs-target='#resetPasswordModal'
+                  >
                     Forgot password?
                   </NavLink>
                 </div>
@@ -80,7 +85,12 @@ const Login = () => {
                   </button>
                 </div>
                 <div className='text-center mt-4'>
-                  <NavLink to='/' className='a-link fw-bold' data-bs-toggle='modal' data-bs-target='#signupModal'>
+                  <NavLink
+                    to='/'
+                    className='a-link fw-bold'
+                    data-bs-toggle='modal'
+                    data-bs-target='#signupModal'
+                  >
                     Create your Account
                     <i
                       className='fa fa-long-arrow-right ms-1'

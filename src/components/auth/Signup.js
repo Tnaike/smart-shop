@@ -4,14 +4,14 @@ import { NavLink } from 'react-router-dom';
 const Signup = () => {
   return (
     <>
-      <button
+      {/* <button
         type='button'
         className='a-link ms-3'
         data-bs-toggle='modal'
         data-bs-target='#signupModal'
       >
-        Register
-      </button>
+        <span className='fa fa-lock me-1'></span>Register
+      </button> */}
 
       <div
         className='modal fade'

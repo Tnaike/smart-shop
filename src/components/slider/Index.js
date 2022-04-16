@@ -53,14 +53,14 @@ const Index = () => {
           </div>
           <div className='carousel-item'>
             <img
-              src='/assets/images/home/store-banner.jpg'
+              src='assets/images/home/slider-001.jpg'
               className='d-block w-100'
               alt='...'
             />
           </div>
           <div className='carousel-item'>
             <img
-              src='assets/images/home/slider-basket.jpg'
+              src='/assets/images/home/store-banner.jpg'
               className='d-block w-100'
               alt='...'
             />
