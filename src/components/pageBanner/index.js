@@ -1,7 +1,7 @@
 import React from 'react';
 import './bannerStyle.css';
 
-const PageBanner = () => {
+const PageBanner = ({ title }) => {
   return (
     <>
       <div className='page-banner'>
@@ -9,7 +9,7 @@ const PageBanner = () => {
           <div className='container'>
             <div className='row'>
               <h1 className='intro_title text-center bold text-white'>
-                ABOUT US
+                {title}
               </h1>
             </div>
           </div>

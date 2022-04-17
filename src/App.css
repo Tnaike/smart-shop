@@ -117,10 +117,7 @@ ul {
 .text-dblue {
   color: #062c59;
 }
-input[type='email'],
-input[type='password'],
-input[type='search'],
-input[type='text'],
+footer input[type='text'],
 textarea {
   width: 100%;
   padding: 0 15px;
@@ -133,8 +130,6 @@ textarea {
   border-radius: 3px;
   outline: none;
 }
-footer input[type='password'],
-footer input[type='search'],
 footer input[type='text'],
 textarea {
   background: #fff;

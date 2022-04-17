@@ -22,5 +22,6 @@
   left: 0;
   font-size: 30px;
   padding: 15px;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }

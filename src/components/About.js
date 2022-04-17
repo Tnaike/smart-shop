@@ -6,11 +6,11 @@ import PageBanner from './pageBanner';
 const About = () => {
   return (
     <div>
-      <PageBanner />
+      <PageBanner title='About Us' />
       <div className='container py-5 my-5'>
         <div className='row'>
           <div className='col-md-6'>
-            <h2 className='text-primary fw-bold mb-4'>About Us</h2>
+            <h2 className='text-primary fw-bold mb-4'>About Smart Shop</h2>
             <p className='lead mb-4'>
               Smart Shop is Nigeria’s number one online Shopping destination.We
               pride ourselves in having everything you could possibly need for
