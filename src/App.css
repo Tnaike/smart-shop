@@ -29,15 +29,13 @@ ul {
   margin-bottom: 1rem;
   padding: 0;
 }
-.main-wrap {
-  background-color: rgb(244 244 244 / 80%);
-}
 .pr {
   position: relative;
 }
 .oh {
   overflow: hidden;
 }
+.ls__1{letter-spacing: 1px;}
 .pt__30 {
   padding-top: 30px;
 }
@@ -92,6 +90,9 @@ ul {
 .font-12 {
   font-size: 12px !important;
 }
+.font-13 {
+  font-size: 13px !important;
+}
 .font-14 {
   font-size: 14px !important;
 }
@@ -112,6 +113,9 @@ ul {
 }
 .text-primary {
   color: #0d6efd;
+}
+.text-dblue {
+  color: #062c59;
 }
 input[type='email'],
 input[type='password'],

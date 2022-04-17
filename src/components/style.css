@@ -13,7 +13,7 @@
 }
 .carousel-item img {
   object-fit: cover;
-  height: 600px;
+  height: 650px;
   width: 100%;
 }
 .footer_wrap {
@@ -83,13 +83,6 @@ button.btn.submit {
   border-radius: 0 2px 2px 0;
   overflow: hidden;
 }
-.site-info {
-  position: relative;
-  width: 100%;
-  color: #fff;
-  background: #131110;
-  padding: 25px 0;
-}
 .footer-contact p span,
 .footer-contact p i {
   display: table-cell;
@@ -101,9 +94,25 @@ button.btn.submit {
 .payment__method-icon img {
   height: 32px;
 }
+.site-info {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  background: #131110;
+  padding: 25px 0;
+}
 
 @media only screen and (max-width: 767px) {
-  .site-footer .text-right {
+  .navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  .carousel-item img {
+    height: 420px;
+  }
+  .site-footer .text-right,
+  .site-info,
+  .site-info .text-right {
     text-align: center !important;
   }
 }
