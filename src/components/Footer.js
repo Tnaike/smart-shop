@@ -29,14 +29,16 @@ const Footer = () => {
                     <div className='footer-contact'>
                       <p>
                         <a className='db' href='/'>
-                          <img src={FootLogo} alt='SmartShop' height='50'/>
+                          <img src={FootLogo} alt='SmartShop' height='50' />
                         </a>
                       </p>
                       <p>
                         <i className='fa fa-map-marker me-2'> </i>
                         <span>
                           1, Naike Avenue, Netwood Rd, <br />{' '}
-                          <span className='pl__30'>Victoria-Island, Lagos.</span>
+                          <span className='pl__30'>
+                            Victoria-Island, Lagos.
+                          </span>
                         </span>
                       </p>
                       <p>
@@ -143,10 +145,10 @@ const Footer = () => {
                   <div className='menu_footer widget_footer'>
                     <ul className='menu'>
                       <li className='menu-item'>
-                        <a href='/about-us'>About Us</a>
+                        <NavLink to='/about'>About Us</NavLink>
                       </li>
                       <li className='menu-item'>
-                        <a href='/contact-us'>Contact Us</a>
+                        <NavLink to='/contact'>Contact Us</NavLink>
                       </li>
                       <li className='menu-item'>
                         <a href='/terms-conditions'>Terms &amp; Conditions</a>
@@ -172,7 +174,7 @@ const Footer = () => {
                         <a href='/store-location'>Store Location</a>
                       </li>
                       <li className='menu-item'>
-                        <a href='/latest-news'>Latest News</a>
+                        <a href='/'>Latest News</a>
                       </li>
                       <li className='menu-item'>
                         <a href='/size-guide'>Size Guide</a>
@@ -217,12 +219,20 @@ const Footer = () => {
                     </form>
                   </div>
                   <div className='payment__method-icon mt__20'>
-                    <img src={MasterCard} alt='payment method' title='MasterCard'/>
-                    <img src={AmazonPay} alt='payment method' title='AmazonPay'/>
-                    <img src={ApplePay} alt='payment method' title='ApplePay'/>
-                    <img src={PayPal} alt='payment method' title='PayPal'/>
-                    <img src={Bitcoin} alt='payment method' title='Bitcoin'/>
-                    <img src={Visa} alt='payment method' title='Visa'/>
+                    <img
+                      src={MasterCard}
+                      alt='payment method'
+                      title='MasterCard'
+                    />
+                    <img
+                      src={AmazonPay}
+                      alt='payment method'
+                      title='AmazonPay'
+                    />
+                    <img src={ApplePay} alt='payment method' title='ApplePay' />
+                    <img src={PayPal} alt='payment method' title='PayPal' />
+                    <img src={Bitcoin} alt='payment method' title='Bitcoin' />
+                    <img src={Visa} alt='payment method' title='Visa' />
                   </div>
                 </div>
               </div>

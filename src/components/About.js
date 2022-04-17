@@ -1,14 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ReactComponent as AboutImg } from '../assets/abt.svg';
+import PageBanner from './pageBanner';
 
 const About = () => {
   return (
     <div>
+      <PageBanner title='About Us' />
       <div className='container py-5 my-5'>
         <div className='row'>
           <div className='col-md-6'>
-            <h2 className='text-primary fw-bold mb-4'>About Us</h2>
+            <h2 className='text-primary fw-bold mb-4'>About Smart Shop</h2>
             <p className='lead mb-4'>
               Smart Shop is Nigeria’s number one online Shopping destination.We
               pride ourselves in having everything you could possibly need for
