@@ -1,10 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ReactComponent as AboutImg } from '../assets/abt.svg';
+import PageBanner from './pageBanner';
 
 const About = () => {
   return (
     <div>
+      <PageBanner />
       <div className='container py-5 my-5'>
         <div className='row'>
           <div className='col-md-6'>
