@@ -13,10 +13,49 @@ const Home = () => {
     <>
       <div className='main-wrap'>
         <Slider />
-        <section className='container more-for-you mt-3 d-none d-sm-block'>
+        <section className='container'>
+          <div className='row'>
+            <div className='col-lg-12 my-5'>
+              <div className='bg-white shadow-sm card p-3'>
+                <div className='d-flex justify-content-between'>
+                  <h5 className='page-lead m-0'>Recommended Products</h5>
+                </div>
+                <hr />
+                <div className='row'>
+                  {DATA?.slice(0, 8).map((item) => {
+                    return (
+                      <div className='col-md-3 col-sm-12 p-3' key={item.id}>
+                        <div className='card my-4 py-2'>
+                          <img
+                            src={item.img}
+                            className='card-img-top'
+                            alt={item.title}
+                          />
+                          <div className='card-body text-center'>
+                            <h5 className='card-titleer font-13 prod-title'>
+                              {item.title}
+                            </h5>
+                            <p className='lead bold'>₦ {item.price}</p>
+                            <NavLink
+                              to={`/products/${item.id}`}
+                              className='btn btn-outline-primary'
+                            >
+                              Buy Now
+                            </NavLink>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className='container more-for-you mt-4 d-none d-sm-block text-dblue'>
           <div className='row'>
             <div className='col-lg-12'>
-              <div className='p-3 bg-white shadow-sm'>
+              <div className='py-5 bg-white'>
                 <div className='row'>
                   <div className='col-lg-3'>
                     <div className='d-flex justify-content-lg-between'>
@@ -24,7 +63,7 @@ const Home = () => {
                         <ValueIcon />
                       </div>
                       <div>
-                        <h6 className='bolder font-14 mb-1'>
+                        <h6 className='bolder font-13 text-uppercase ls__1 mb-1'>
                           Great value items
                         </h6>
                         <p className='font-10 m-0'>
@@ -40,7 +79,7 @@ const Home = () => {
                         <SeamlessIcon />
                       </div>
                       <div>
-                        <h6 className='bolder font-14 mb-1'>
+                        <h6 className='bolder font-13 text-uppercase ls__1 mb-1'>
                           Seamless shopping
                         </h6>
                         <p className='font-10 m-0'>
@@ -56,7 +95,7 @@ const Home = () => {
                         <SafeIcon />
                       </div>
                       <div>
-                        <h6 className='bolder font-14 mb-1'>Secure payment</h6>
+                        <h6 className='bolder font-13 text-uppercase ls__1 mb-1'>Secure payment</h6>
                         <p className='font-10 m-0'>
                           When you make payment with any available pay option,
                           you can be rest assured about your security.
@@ -70,7 +109,7 @@ const Home = () => {
                         <DeliveryIcon />
                       </div>
                       <div>
-                        <h6 className='bolder font-14 mb-1'>
+                        <h6 className='bolder font-13 text-uppercase ls__1 mb-1'>
                           Nationwide delivery
                         </h6>
                         <p className='font-10 m-0'>
@@ -80,45 +119,6 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className='container'>
-          <div className='row'>
-            <div className='col-lg-12 my-5'>
-              <div className='bg-white shadow-sm card p-3'>
-                <div className='d-flex justify-content-between'>
-                  <h5 className='page-lead m-0'>Recommended Products</h5>
-                </div>
-                <hr />
-                <div className='row'>
-                    {DATA?.slice(0, 8).map((item) => {
-                      return (
-                        <div className='col-md-3 col-sm-12 p-3' key={item.id}>
-                          <div className='card my-4 py-2'>
-                            <img
-                              src={item.img}
-                              className='card-img-top'
-                              alt={item.title}
-                            />
-                            <div className='card-body text-center'>
-                              <h5 className='card-title font-14 prod-title'>
-                                {item.title}
-                              </h5>
-                              <p className='lead bold'>₦ {item.price}</p>
-                              <NavLink
-                                to={`/products/${item.id}`}
-                                className='btn btn-outline-primary'
-                              >
-                                Buy Now
-                              </NavLink>
-                            </div>
-                          </div>
-                        </div>
-                      );
-                    })}
                 </div>
               </div>
             </div>
