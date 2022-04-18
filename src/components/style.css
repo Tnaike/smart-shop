@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: center;
   background: #111;
+  text-align: center;
   padding: 20px;
   margin: 15px 5px;
   color: #fff;
@@ -28,6 +29,19 @@
   font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
+}
+.offer-banner-score {
+  font-size: 35px;
+  font-weight: 700;
+  color: #e7932b;
+}
+.offer-banner-badge {
+  background: #e79329;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: initial;
+  padding: 4px 15px;
+  letter-spacing: 1px;
 }
 .carousel-item img {
   object-fit: cover;

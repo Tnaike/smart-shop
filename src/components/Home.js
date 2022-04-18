@@ -27,6 +27,10 @@ const Home = () => {
                 <div className='cat_banner'>
                   <div className='cat_title'>
                     <h3>Women's Clothing</h3>
+                    <div className='offer-banner'>
+                      <div className='offer-banner-score text-primary'>15%</div>
+                    </div>
+                    <div className='offer-banner-badge text-uppercase ib'>Offer</div>
                   </div>
                 </div>
               </div>
@@ -39,6 +43,9 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className='section-title-wrap text-center'>
+          <h2>Most Recent Products</h2>
         </div>
         <section className='container'>
           <div className='row'>

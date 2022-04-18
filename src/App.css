@@ -35,6 +35,9 @@ ul {
 .db {
   display: block;
 }
+.ib {
+  display: inline-block;
+}
 .oh {
   overflow: hidden;
 }
