@@ -28,7 +28,7 @@ const Home = () => {
                   <div className='cat_title'>
                     <h3>Women's Clothing</h3>
                     <div className='offer-banner'>
-                      <div className='offer-banner-score text-primary'>15%</div>
+                      <div className='offer-banner-score'>15%</div>
                     </div>
                     <div className='offer-banner-badge text-uppercase ib'>Offer</div>
                   </div>
@@ -44,17 +44,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='section-title-wrap text-center'>
-          <h2>Most Recent Products</h2>
+        <div className='section-title-wrap text-center mt-5'>
+          <h2 className='my-3'>Most Recent Products</h2>
         </div>
         <section className='container'>
           <div className='row'>
-            <div className='col-lg-12 my-5'>
-              <div className='bg-white shadow-sm card p-3'>
-                <div className='d-flex justify-content-between'>
-                  <h5 className='page-lead m-0'>Recommended Products</h5>
-                </div>
-                <hr />
+            <div className='col-lg-12'>
                 <div className='row'>
                   {DATA?.slice(0, 8).map((item) => {
                     return (
@@ -82,7 +77,6 @@ const Home = () => {
                     );
                   })}
                 </div>
-              </div>
             </div>
           </div>
         </section>
