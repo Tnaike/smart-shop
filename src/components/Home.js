@@ -13,6 +13,40 @@ const Home = () => {
     <>
       <div className='main-wrap'>
         <Slider />
+        <div className='cat__banner_wrap my-5'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-md-4'>
+                <div className='cat_banner'>
+                  <div className='cat_title'>
+                    <h3>Men's Clothing</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-md-4'>
+                <div className='cat_banner'>
+                  <div className='cat_title'>
+                    <h3>Women's Clothing</h3>
+                    <div className='offer-banner'>
+                      <div className='offer-banner-score text-primary'>15%</div>
+                    </div>
+                    <div className='offer-banner-badge text-uppercase ib'>Offer</div>
+                  </div>
+                </div>
+              </div>
+              <div className='col-md-4'>
+                <div className='cat_banner'>
+                  <div className='cat_title'>
+                    <h3>Electronics</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='section-title-wrap text-center'>
+          <h2>Most Recent Products</h2>
+        </div>
         <section className='container'>
           <div className='row'>
             <div className='col-lg-12 my-5'>
@@ -95,7 +129,9 @@ const Home = () => {
                         <SafeIcon />
                       </div>
                       <div>
-                        <h6 className='bolder font-13 text-uppercase ls__1 mb-1'>Secure payment</h6>
+                        <h6 className='bolder font-13 text-uppercase ls__1 mb-1'>
+                          Secure payment
+                        </h6>
                         <p className='font-10 m-0'>
                           When you make payment with any available pay option,
                           you can be rest assured about your security.
