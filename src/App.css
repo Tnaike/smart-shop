@@ -41,7 +41,9 @@ ul {
 .oh {
   overflow: hidden;
 }
-.ls__1{letter-spacing: 1px;}
+.ls__1 {
+  letter-spacing: 1px;
+}
 .pt__30 {
   padding-top: 30px;
 }
