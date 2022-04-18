@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <div className='main-wrap'>
         <Slider />
-        <div className='cat__banner_wrap'>
+        <div className='cat__banner_wrap my-5'>
           <div className='container'>
             <div className='row'>
               <div className='col-md-4'>

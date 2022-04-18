@@ -32,6 +32,9 @@ ul {
 .pr {
   position: relative;
 }
+.db {
+  display: block;
+}
 .oh {
   overflow: hidden;
 }
