@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { ReactComponent as SearchIcon } from '../../assets/Search.svg';
-import SearchPage from '../SearchPage';
+import SearchPanel from '../SearchPanel';
 
 const SearchButton = () => {
   const [openSearchModal, setOpenSearchModal] = useState(false);
-console.log(openSearchModal);
+
   return (
     <>
       <NavLink
@@ -17,7 +17,7 @@ console.log(openSearchModal);
       </NavLink>
 
       {openSearchModal && (
-        <SearchPage
+        <SearchPanel
           showSearchModal={openSearchModal}
           setShowSearchModal={setOpenSearchModal}
         />
