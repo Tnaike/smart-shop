@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { ReactComponent as SearchIcon } from '../../assets/Search.svg';
-import SearchPanel from '../SearchPanel';
+import SearchPanel from '../searchPanel/SearchPanel';
 
 const SearchButton = () => {
   const [openSearchModal, setOpenSearchModal] = useState(false);
