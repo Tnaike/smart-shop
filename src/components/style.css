@@ -11,6 +11,11 @@
 .navbar-nav .nav-item {
   padding: 0 0.7rem;
 }
+.carousel-item img {
+  object-fit: cover;
+  height: 650px;
+  width: 100%;
+}
 .cat_banner {
   display: flex;
   position: relative;
@@ -43,10 +48,9 @@
   padding: 4px 15px;
   letter-spacing: 1px;
 }
-.carousel-item img {
-  object-fit: cover;
-  height: 650px;
-  width: 100%;
+.section-title-wrap {
+  position: relative;
+  padding-top: 30px;
 }
 .footer_wrap {
   position: relative;
