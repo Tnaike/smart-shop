@@ -137,6 +137,77 @@ button.btn.submit {
   background: #131110;
   padding: 25px 0;
 }
+.search-panel-wrap.activeSearch {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+  color: #fff;
+  margin: 20px;
+  overflow-y: auto;
+  z-index: 9999;
+}
+.topSearch-row {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.topSearch-cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.search-panel-wrap .search-form {
+  position: relative;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: none;
+}
+.search-panel-wrap input.search-field {
+  background: transparent;
+  color: #000000;
+  width: 100%;
+  font-size: 26px;
+  line-height: 26px;
+  padding: 0 50px 10px 0;
+  border-width: 0 0 3px;
+  letter-spacing: 0.5px;
+  border-bottom-color: #111111;
+  outline: none;
+}
+.search-panel-wrap .topSearch-submit {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 34px;
+  border: 0;
+  background: transparent;
+  outline: none;
+}
+.topSearch_close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #000000;
+  font-size: 35px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.search-panel-wrap .topSearch-submit .svg-navIcon {
+  width: 30px;
+  height: 30px;
+}
 
 @media only screen and (max-width: 767px) {
   .navbar-light .navbar-toggler {
