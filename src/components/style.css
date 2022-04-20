@@ -179,11 +179,11 @@ button.btn.submit {
   border-bottom-color: #111111;
   outline: none;
 }
-.search-panel-wrap button.topSearch-submit {
+.search-panel-wrap .topSearch-submit {
   position: absolute;
   top: 0px;
   right: 5px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
