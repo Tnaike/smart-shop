@@ -145,8 +145,8 @@ button.btn.submit {
   left: 0;
   background-color: #ffffff;
   color: #fff;
-  margin: 20px;
-  overflow-y: auto;
+  margin: 15px;
+  overflow: hidden;
   z-index: 9999;
 }
 .topSearch-row {
@@ -207,6 +207,9 @@ button.btn.submit {
 .search-panel-wrap .topSearch-submit .svg-navIcon {
   width: 30px;
   height: 30px;
+}
+.search-panel-wrap .topSearch-submit:focus .svg-navIcon path, .search-panel-wrap .topSearch-submit:hover .svg-navIcon path {
+  fill: #0d6efd;
 }
 
 @media only screen and (max-width: 767px) {
