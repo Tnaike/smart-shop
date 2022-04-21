@@ -30,6 +30,7 @@ const SearchPanel = ({ showSearchModal, setShowSearchModal }) => {
                 className='search-field'
                 placeholder='Enter Search...'
                 name='searchField'
+                autoComplete='off'
                 defaultValue={searchValue.value}
                 onChange={handleChange}
               />
