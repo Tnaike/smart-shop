@@ -197,18 +197,22 @@ button.btn.submit {
   position: absolute;
   right: 20px;
   top: 20px;
-  color: #000000;
+  color: #818181;
   font-size: 35px;
   width: 40px;
   text-align: center;
   line-height: 40px;
   cursor: pointer;
 }
+.topSearch_close:hover {
+  color: #000000;
+}
 .search-panel-wrap .topSearch-submit .svg-navIcon {
   width: 30px;
   height: 30px;
 }
-.search-panel-wrap .topSearch-submit:focus .svg-navIcon path, .search-panel-wrap .topSearch-submit:hover .svg-navIcon path {
+.search-panel-wrap .topSearch-submit:focus .svg-navIcon path,
+.search-panel-wrap .topSearch-submit:hover .svg-navIcon path {
   fill: #0d6efd;
 }
 
@@ -224,5 +228,12 @@ button.btn.submit {
   .site-info,
   .site-info .text-right {
     text-align: center !important;
+  }
+  ul.navbar-nav {
+    margin-top: 15px !important;
+  }
+  .navbar-nav .nav-item .nav-link {
+    padding: 10px 0;
+    line-height: 25px;
   }
 }
