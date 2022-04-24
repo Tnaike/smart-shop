@@ -1,4 +1,4 @@
-.navbar-nav .nav-item .nav-link {
+.navbar-nav .nav-item .nav-link, .navbar-collapse .icon-title {
   font-size: 1rem;
   font-weight: 600;
   color: #000000;
@@ -236,4 +236,16 @@ button.btn.submit {
     padding: 10px 0;
     line-height: 25px;
   }
+  .navbar-collapse .col-nav-btn {
+    flex-direction: column;
+    align-items: start;
+  }
+  .navbar-collapse .a-link {
+    display: block;
+    margin: 0 !important;
+    padding: 10px 5px !important;
+  }
+  .navbar-collapse .icon-title {
+    padding: 5px;
+}
 }

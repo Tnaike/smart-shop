@@ -8,11 +8,12 @@ const Login = () => {
     <>
       <button
         type='button'
-        className='a-link btn-cart ms-3'
+        className='a-link btn-cart ms-2 order-sm-2'
         data-bs-toggle='modal'
         data-bs-target='#loginModal'
       >
         <UserIcon className='svg-navIcon' />
+        <span className='icon-title d-line d-sm-none'>Login / Register</span>
       </button>
 
       <div

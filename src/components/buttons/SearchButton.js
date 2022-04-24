@@ -10,10 +10,11 @@ const SearchButton = () => {
     <>
       <NavLink
         to='/'
-        className='btn btn-cart a-link pr p-0 ms-3'
+        className='btn btn-cart a-link pr order-sm-1'
         onClick={() => setOpenSearchModal(!openSearchModal)}
       >
         <SearchIcon className='svg-navIcon' />
+        <span className='icon-title d-line d-sm-none'>Search</span>
       </NavLink>
 
       {openSearchModal && (
