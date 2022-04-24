@@ -161,15 +161,16 @@
 .btn-cart img {
   height: 24px;
 }
-.svg-navIcon, .svg-navIcon-s {
+.svg-navIcon,
+.svg-navIcon-s {
   height: 24px;
   width: 24px;
 }
 .cart-count,
 .fav-count {
   position: absolute;
-  top: -8px;
-  right: -5px;
+  top: -2px;
+  right: 2px;
   width: 16px;
   height: 16px;
   font-size: 11px;
@@ -179,14 +180,17 @@
   line-height: 16px;
   border-radius: 50px;
 }
-.btn-cart:hover .svg-navIcon path, .btn-cart:focus .svg-navIcon path, .btn-cart:focus .cart-count,
+.btn-cart:hover .svg-navIcon path,
+.btn-cart:focus .svg-navIcon path,
+.btn-cart:focus .cart-count,
 .btn-cart:focus .fav-count,
 .btn-cart:hover .fav-count,
 .btn-cart:hover .cart-count {
   background: #111111;
   fill: #0d6efd;
 }
-.btn-cart:hover .svg-navIcon-s path, .btn-cart:focus .svg-navIcon-s path {
+.btn-cart:hover .svg-navIcon-s path,
+.btn-cart:focus .svg-navIcon-s path {
   stroke: #0d6efd;
 }
 

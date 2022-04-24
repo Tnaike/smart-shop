@@ -13,7 +13,7 @@ import SearchButton from './buttons/SearchButton';
 const Header = () => {
   return (
     <>
-      <nav className='navbar navbar-expand-lg navbar-light'>
+      <nav className='navbar navbar-expand-lg navbar-light bg-white'>
         <div className='container'>
           <NavLink className='navbar-brand' to='/'>
             <img src={Logo} alt='SmartShop' />
@@ -69,13 +69,13 @@ const Header = () => {
                 </NavLink>
               </li>
             </ul>
-            <div className='d-flex'>
-              <SearchButton/>
+            <div className='d-flex col-nav-btn'>
+              <WishListButton />
+              <SearchButton />
               <Login />
               <Signup />
-              <WishListButton />
-              <CartButton />
               <ResetPassword />
+              <CartButton />
             </div>
           </div>
         </div>
