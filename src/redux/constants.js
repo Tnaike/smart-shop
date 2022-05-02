@@ -1,3 +1,2 @@
-export const LOADING = 'LOADING';
-export const GET_PRODUCTS = 'GET_PRODUCTS';
+export const FETCH_ALL_PRODUCTS = 'FETCH_ALL_PRODUCTS';
 export const ADD_PRODUCT = 'ADD_PRODUCT';
