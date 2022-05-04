@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchAllProducts } from '../redux/actions';
 import Skeleton from 'react-loading-skeleton';
 import { NavLink } from 'react-router-dom';
 
 const Products = () => {
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state?.productReducer?.products);
+  console.log(products);
   const [data, setData] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState(data);
   const [loading, setLoading] = useState(false);
@@ -25,6 +30,10 @@ const Products = () => {
 
     getProducts();
   }, []);
+
+  useEffect(() => {
+    dispatch(fetchAllProducts);
+  }, [dispatch]);
 
   const LoadingProducts = () => {
     return (
@@ -88,30 +97,28 @@ const Products = () => {
 
         {filteredProducts?.map((product) => {
           return (
-            <>
-              <div className='col-md-3 col-sm-12 mb-4' key={product?.id}>
-                <div className='card p-4 h-100 text-center'>
-                  <img
-                    src={product?.image}
-                    className='card-img-top'
-                    alt={product.title}
-                    height='250px'
-                  />
-                  <div className='card-body'>
-                    <h5 className='card-title mb-0'>
-                      {product?.title.substring(0, 18)}...
-                    </h5>
-                    <p className='card-text lead fw-bold'>${product.price}</p>
-                    <NavLink
-                      to={`/products/${product?.id}`}
-                      className='btn btn-outline-primary'
-                    >
-                      Buy Now
-                    </NavLink>
-                  </div>
+            <div className='col-md-3 col-sm-12 mb-4' key={product?.id}>
+              <div className='card p-4 h-100 text-center'>
+                <img
+                  src={product?.image}
+                  className='card-img-top'
+                  alt={product.title}
+                  height='250px'
+                />
+                <div className='card-body'>
+                  <h5 className='card-title mb-0'>
+                    {product?.title.substring(0, 18)}...
+                  </h5>
+                  <p className='card-text lead fw-bold'>${product.price}</p>
+                  <NavLink
+                    to={`/products/${product?.id}`}
+                    className='btn btn-outline-primary'
+                  >
+                    Buy Now
+                  </NavLink>
                 </div>
               </div>
-            </>
+            </div>
           );
         })}
       </>
