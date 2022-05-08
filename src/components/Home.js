@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Slider from './slider/Index';
 import { NavLink } from 'react-router-dom';
 import DATA from '../Data';
@@ -7,8 +7,18 @@ import { ReactComponent as ValueIcon } from '../assets/value.svg';
 import { ReactComponent as SeamlessIcon } from '../assets/seamless.svg';
 import { ReactComponent as SafeIcon } from '../assets/safe.svg';
 import { ReactComponent as DeliveryIcon } from '../assets/delivery.svg';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchAllProducts } from '../redux/actions';
 
 const Home = () => {
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state?.productReducer?.products);
+  console.log(products);
+
+  useEffect(() => {
+    dispatch(fetchAllProducts());
+  }, [dispatch]);
+
   return (
     <>
       <div className='main-wrap'>
