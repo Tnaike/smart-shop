@@ -4,12 +4,12 @@ const initialState = {
   products: [],
 };
 
-export default function productReducer(state = initialState, { type, payload }) {
-  switch (type) {
+const productReducer = (state = initialState, action) => {
+  switch (action.type) {
     case FETCH_ALL_PRODUCTS: {
       return {
         ...state,
-        products: payload,
+        products: action.payload,
       };
     }
     default: {
@@ -17,3 +17,5 @@ export default function productReducer(state = initialState, { type, payload }) 
     }
   }
 }
+
+export default productReducer;

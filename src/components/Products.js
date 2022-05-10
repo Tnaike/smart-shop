@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchAllProducts } from '../redux/actions';
+// import { useDispatch, useSelector } from 'react-redux';
+// import { fetchAllProducts } from '../redux/actions';
 import Skeleton from 'react-loading-skeleton';
 import { NavLink } from 'react-router-dom';
 
 const Products = () => {
-  const dispatch = useDispatch();
-  const products = useSelector((state) => state?.productReducer?.products);
-  console.log(products);
+  // const dispatch = useDispatch();
+  // const products = useSelector((state) => state?.productReducer?.products);
+ 
   const [data, setData] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState(data);
   const [loading, setLoading] = useState(false);
@@ -30,10 +30,6 @@ const Products = () => {
 
     getProducts();
   }, []);
-
-  useEffect(() => {
-    dispatch(fetchAllProducts);
-  }, [dispatch]);
 
   const LoadingProducts = () => {
     return (

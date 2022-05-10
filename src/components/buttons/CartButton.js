@@ -4,7 +4,8 @@ import { useSelector } from 'react-redux';
 import { ReactComponent as CartIcon} from '../../assets/Cart.svg';
 
 const CartButton = () => {
-  const state = useSelector((state) => state?.handleCart);
+  const state = useSelector((state) => state?.productReducer.products);
+
   return (
     <>
       <NavLink to='/cart' className='btn btn-cart a-link pr order-sm-4'>

@@ -96,7 +96,7 @@ const Footer = () => {
                             </li>
                             <li>
                               <a
-                                href='https://www.linkedin.com/in/timilehin-adenaike-865069129'
+                                href='https://www.linkedin.com/in/timilehin-adenaike'
                                 title='Linkedin'
                                 target='_blank'
                                 rel='noreferrer'
